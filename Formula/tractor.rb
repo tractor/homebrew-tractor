@@ -3,7 +3,7 @@ class Tractor < Formula
   homepage "http://www.tractor-mri.org.uk"
   url "http://www.tractor-mri.org.uk/tractor.tar.gz"
   version "3.1.0"
-  sha256 "43610303a312a4829f25e67aae03901dfa5bd2d96314e838b1157604f034103d"
+  sha256 "3cf714b0bc08ac8896bce8cabfa7f54fce1ce70f83600e58171a93b99158412d"
   head "https://github.com/tractor/tractor.git"
 
   depends_on "homebrew/science/r"
