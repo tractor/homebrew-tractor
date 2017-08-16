@@ -6,7 +6,7 @@ class Tractor < Formula
   sha256 "6bd7503637ce0a168462f0523860ec1364180d701e75b73c150c31789768aeb6"
   head "https://github.com/tractor/tractor.git"
 
-  depends_on "homebrew/science/r"
+  depends_on "r"
 
   def install
     ENV.deparallelize
