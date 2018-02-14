@@ -8,6 +8,12 @@ class Tractor < Formula
 
   depends_on "r"
 
+  bottle do
+    root_url "https://www.tractor-mri.org.uk"
+    cellar :any
+    sha256 "5b78b67153da2ee975fa3dca26f5144f1ca4b1ab0c6e2fb5fa4ad43fb829c43a" => :high_sierra
+  end
+
   def install
     ENV.deparallelize
 
