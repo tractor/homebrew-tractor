@@ -5,18 +5,19 @@ class Tractor < Formula
   version "3.2.1"
   sha256 "74b6fd3fc526dd271601bdeac09c70d7ac1286ba964ade204a33f6526a899afd"
   head "https://github.com/tractor/tractor.git"
-
+  
   depends_on "r"
-
+  
   bottle do
     root_url "https://www.tractor-mri.org.uk"
     cellar :any
-    sha256 "5b78b67153da2ee975fa3dca26f5144f1ca4b1ab0c6e2fb5fa4ad43fb829c43a" => :high_sierra
+    rebuild 1
+    sha256 "2c374f4468901926681a33ee99ba1c935ddf21935bf2c11047205e6fc4df8ba2" => :high_sierra
   end
-
+  
   def install
     ENV.deparallelize
-
+    
     system "make", "install"
     
     prefix.install Dir["*.md", "VERSION", "tests"]
@@ -30,7 +31,7 @@ class Tractor < Formula
     (bin/"exec").mkpath
     (bin/"exec").install_symlink libexec/"tractor"
   end
-
+  
   test do
     system "#{bin}/tractor", "platform"
   end
