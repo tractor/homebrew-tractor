@@ -12,8 +12,7 @@ class Tractor < Formula
   bottle do
     root_url "https://www.tractor-mri.org.uk"
     cellar :any
-    rebuild 1
-    sha256 "2c374f4468901926681a33ee99ba1c935ddf21935bf2c11047205e6fc4df8ba2" => :high_sierra
+    sha256 "35e211300881b1599e9170153193ebe3b14c3014892951e441d133bb25dec38a" => :high_sierra
   end
   
   def install
