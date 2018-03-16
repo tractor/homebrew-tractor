@@ -7,6 +7,7 @@ class Tractor < Formula
   head "https://github.com/tractor/tractor.git"
   
   depends_on "r"
+  depends_on "jasper"   # for JPEG-2000 support in divest
   
   bottle do
     root_url "https://www.tractor-mri.org.uk"
