@@ -9,6 +9,12 @@ class Tractor < Formula
   depends_on "r"
   depends_on "jasper"   # for JPEG-2000 support in divest
   
+  bottle do
+    root_url "https://www.tractor-mri.org.uk"
+    cellar :any
+    sha256 "c5d4a2d8878517e2d5475f0cf6c3a7253b2b70f63bc7b15d5fc8212f75e1b16f" => :mojave
+  end
+  
   def install
     ENV.deparallelize
     
