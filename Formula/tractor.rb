@@ -2,18 +2,12 @@ class Tractor < Formula
   desc "TractoR: Magnetic resonance and tractography with R"
   homepage "http://www.tractor-mri.org.uk"
   url "http://www.tractor-mri.org.uk/tractor.tar.gz"
-  version "3.3.1"
-  sha256 "32368e7d606d07db5da442eb969235595b747b4082139d50995614c4f0ba181f"
+  version "3.3.2"
+  sha256 "10009681a76c7301935761d258c4ecba67e19ae450bffcfbf0331f9c2b095415"
   head "https://github.com/tractor/tractor.git"
   
   depends_on "r"
   depends_on "jasper"   # for JPEG-2000 support in divest
-  
-  bottle do
-    root_url "https://www.tractor-mri.org.uk"
-    cellar :any
-    sha256 "33ff495a71daa82f2d9756a1b7fdc5987ea8fd77b7cd200698bc0a027f3e2855" => :mojave
-  end
   
   def install
     ENV.deparallelize
