@@ -2,8 +2,8 @@ class Tractor < Formula
   desc "Magnetic resonance and tractography with R"
   homepage "http://www.tractor-mri.org.uk"
   url "http://www.tractor-mri.org.uk/tractor.tar.gz"
-  version "3.3.4"
-  sha256 "01eb640b36493d72b1824cb826bc7dc83d55585bf2d17c36f57c9803c724fc8e"
+  version "3.3.5"
+  sha256 "b4ae366b006c64415c3149d1d06c1158a914a4245c1e049ed036c064e2712e3b"
   head "https://github.com/tractor/tractor.git"
 
   bottle do
