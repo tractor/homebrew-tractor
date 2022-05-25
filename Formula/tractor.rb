@@ -7,6 +7,13 @@ class Tractor < Formula
   head "https://github.com/tractor/tractor.git"
   revision 1
 
+  bottle do
+    root_url "https://www.tractor-mri.org.uk"
+    rebuild 1
+    sha256 cellar: :any, monterey: "720bedbf5f6eb8cfd6879b1169da00bf64f7bf798b1403dd05d35125b9986890"
+    sha256 cellar: :any, big_sur:  "7ba3a5a8feb083170f0dd950a4192cb17fd94f748ed852bbf11e52b72bc71049"
+  end
+
   depends_on "jasper"    # for JPEG-2000 support in divest
   depends_on "r"
 
