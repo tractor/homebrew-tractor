@@ -11,6 +11,7 @@ class Tractor < Formula
     root_url "https://www.tractor-mri.org.uk"
     rebuild 1
     sha256 cellar: :any, monterey: "720bedbf5f6eb8cfd6879b1169da00bf64f7bf798b1403dd05d35125b9986890"
+    sha256 cellar: :any, arm64_monterey: "62e3bae2931bfc8ae4b5de376beea682992bb06cec7c4e70021db26c45bffa4e"
     sha256 cellar: :any, big_sur:  "7ba3a5a8feb083170f0dd950a4192cb17fd94f748ed852bbf11e52b72bc71049"
   end
 
