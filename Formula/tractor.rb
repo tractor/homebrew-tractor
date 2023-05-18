@@ -5,13 +5,12 @@ class Tractor < Formula
   version "3.4.0"
   sha256 "9f9ab63dceab4001f7efcc4904ebcaa39d78cad05ab2b5dbbe787f1445745be1"
   head "https://github.com/tractor/tractor.git"
-
+  
   bottle do
     root_url "https://www.tractor-mri.org.uk"
-    rebuild 1
-    sha256 cellar: :any, monterey: "720bedbf5f6eb8cfd6879b1169da00bf64f7bf798b1403dd05d35125b9986890"
-    sha256 cellar: :any, arm64_monterey: "62e3bae2931bfc8ae4b5de376beea682992bb06cec7c4e70021db26c45bffa4e"
-    sha256 cellar: :any, big_sur:  "7ba3a5a8feb083170f0dd950a4192cb17fd94f748ed852bbf11e52b72bc71049"
+    rebuild 2
+    sha256 cellar: :any, ventura: "5c80a462e9e3b5071542fba2728fe12a3e472ad01dbf83f52ff48193d24e6e61"
+    sha256 cellar: :any, arm64_ventura: "536ff6027cad2abb04daf7e1b7f549054f4113ebba55236b3486f350f020d71e"
   end
 
   depends_on "jasper"    # for JPEG-2000 support in divest
