@@ -5,7 +5,6 @@ class Tractor < Formula
   version "3.4.0"
   sha256 "9f9ab63dceab4001f7efcc4904ebcaa39d78cad05ab2b5dbbe787f1445745be1"
   head "https://github.com/tractor/tractor.git"
-  revision 1
 
   bottle do
     root_url "https://www.tractor-mri.org.uk"
