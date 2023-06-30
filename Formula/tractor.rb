@@ -6,6 +6,12 @@ class Tractor < Formula
   sha256 "4aa00b8afdee259e881e07602cb9f9c47a979cc99fb6b2fb521ceafd0831fa10"
   head "https://github.com/tractor/tractor.git"
   
+  bottle do
+    rebuild 1
+    sha256 cellar: :any, ventura: "b62f9a2a026c48c957292a3c56a4f7c8e60cb50f592885f7cb4bcec94b8be55c"
+    sha256 cellar: :any, arm64_ventura: "b75d4df729e626267e27eb75b9e9319ef53d667f90edf97dbb34bf2b3fc3fabc"
+  end
+  
   depends_on "jasper"    # for JPEG-2000 support in divest
   depends_on "r"
 
