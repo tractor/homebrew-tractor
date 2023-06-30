@@ -2,17 +2,10 @@ class Tractor < Formula
   desc "Magnetic resonance and tractography with R"
   homepage "http://www.tractor-mri.org.uk"
   url "http://www.tractor-mri.org.uk/tractor.tar.gz"
-  version "3.4.0"
-  sha256 "9f9ab63dceab4001f7efcc4904ebcaa39d78cad05ab2b5dbbe787f1445745be1"
+  version "3.4.1"
+  sha256 "4aa00b8afdee259e881e07602cb9f9c47a979cc99fb6b2fb521ceafd0831fa10"
   head "https://github.com/tractor/tractor.git"
   
-  bottle do
-    root_url "https://www.tractor-mri.org.uk"
-    rebuild 2
-    sha256 cellar: :any, ventura: "5c80a462e9e3b5071542fba2728fe12a3e472ad01dbf83f52ff48193d24e6e61"
-    sha256 cellar: :any, arm64_ventura: "536ff6027cad2abb04daf7e1b7f549054f4113ebba55236b3486f350f020d71e"
-  end
-
   depends_on "jasper"    # for JPEG-2000 support in divest
   depends_on "r"
 
