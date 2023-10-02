@@ -7,6 +7,7 @@ class Tractor < Formula
   head "https://github.com/tractor/tractor.git"
   
   bottle do
+    root_url "https://www.tractor-mri.org.uk"
     rebuild 1
     sha256 cellar: :any, ventura: "b62f9a2a026c48c957292a3c56a4f7c8e60cb50f592885f7cb4bcec94b8be55c"
     sha256 cellar: :any, arm64_ventura: "b75d4df729e626267e27eb75b9e9319ef53d667f90edf97dbb34bf2b3fc3fabc"
