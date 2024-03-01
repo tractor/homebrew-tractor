@@ -5,6 +5,12 @@ class Tractor < Formula
   version "3.4.2"
   sha256 "982b75d27b4aef00c9d8804cc2c90b9bafdce0d816150141ff232db746755c9f"
   head "https://github.com/tractor/tractor.git"
+
+  bottle do
+    root_url "https://www.tractor-mri.org.uk"
+    rebuild 1
+    sha256 cellar: :any, arm64_sonoma: "fcff28d9b44302a3f9fe3933d30f0cdc690803e623fb98f5cc252af6702c67ac"
+  end
   
   depends_on "jasper"    # for JPEG-2000 support in divest
   depends_on "r"
