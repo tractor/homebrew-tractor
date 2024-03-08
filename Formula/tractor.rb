@@ -9,6 +9,7 @@ class Tractor < Formula
   bottle do
     root_url "https://www.tractor-mri.org.uk"
     rebuild 1
+    sha256 cellar: :any, sonoma: "99d3523f45221f9e37100f2afccb64b206b2247873942617536e660baae3a126"
     sha256 cellar: :any, arm64_sonoma: "fcff28d9b44302a3f9fe3933d30f0cdc690803e623fb98f5cc252af6702c67ac"
   end
   
