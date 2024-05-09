@@ -6,7 +6,7 @@ class Tractor < Formula
   sha256 "2a143ea4ec6b1f07612f717fbf34c76691c39afa09b56aa2136408787621cf51"
   head "https://github.com/tractor/tractor.git"
 
-  depends_on "jasper"    # for JPEG-2000 support in divest
+  depends_on "jasper" # for JPEG-2000 support in divest
   depends_on "r"
 
   def install
