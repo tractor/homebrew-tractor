@@ -24,13 +24,10 @@ class Tractor < Formula
     prefix.install Dir["*.md", "VERSION", "tests"]
 
     bin.install "bin/tractor", "bin/plough", "bin/furrow"
-    libexec.install "bin/exec/tractor", "lib/R"
+    lib.install "lib/R"
+    libexec.install "libexec/tractor"
     share.install "share/man", "share/tractor"
     doc.install Dir["share/doc/*"]
-
-    prefix.install_symlink libexec => "lib"
-    (bin/"exec").mkpath
-    (bin/"exec").install_symlink libexec/"tractor"
   end
 
   def caveats
