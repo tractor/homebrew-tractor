@@ -1,5 +1,5 @@
 class Tractor < Formula
-  desc "Magnetic resonance and tractography with R"
+  desc "Magnetic resonance imaging and tractography with R"
   homepage "http://www.tractor-mri.org.uk"
   url "http://www.tractor-mri.org.uk/tractor.tar.gz"
   version "3.5.0"
