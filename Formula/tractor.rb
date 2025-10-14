@@ -2,12 +2,14 @@ class Tractor < Formula
   desc "Magnetic resonance imaging and tractography with R"
   homepage "http://www.tractor-mri.org.uk"
   url "http://www.tractor-mri.org.uk/tractor.tar.gz"
-  version "3.5.0"
-  sha256 "f3f85314716e116bfd39250d14e1dddd0bba920f128064316ea43e6a1d1ce210"
   head "https://github.com/tractor/tractor.git"
-
+  license "GPL-2.0-only"
+  
   depends_on "jasper" # for JPEG-2000 support in "divest"
   depends_on "r"
+  
+  version "3.5.0"
+  sha256 "f3f85314716e116bfd39250d14e1dddd0bba920f128064316ea43e6a1d1ce210"
   
   def install
     ENV.deparallelize
