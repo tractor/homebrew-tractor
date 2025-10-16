@@ -9,6 +9,12 @@ class Tractor < Formula
   depends_on "jasper" # for JPEG-2000 support in "divest"
   depends_on "r"
   
+  bottle do
+    rebuild 1
+    sha256 arm64_sequoia: "dc70798cbabfd103407374204442a29a331e3809aaf6c99fcf326722ef0ccd56"
+    sha256 arm64_tahoe: "44b79c698b87378ecc233a274a97b55813c80a4eb8d3849e9880b058f1eeeec5"
+  end
+  
   def install
     ENV.deparallelize
 
