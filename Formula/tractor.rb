@@ -11,6 +11,12 @@ class Tractor < Formula
   version "3.5.2"
   sha256 "5ba47f27bd0e8f42cfc38532df9a7dd46a684a6afb957388c281d23754bd69c6"
   
+  bottle do
+    rebuild 1
+    sha256 arm64_tahoe: "cfa6e086c62786972c82841aca4d0c6ecb35bcd68a854e2c280cf77660811dd9"
+    sha256 arm64_sequoia: "2bf65e4979601881b2c4eed3aec88713f94cba470312753854b56d496c660c81"
+  end
+  
   def install
     ENV.deparallelize
 
